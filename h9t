@@ -1,3 +1,5 @@
+sudo journalctl --grep caddy -n 30 > caddylog.txt
+
 marras 05 19:28:58 mikael-virtualbox sudo[1467]:   mikael : TTY=pts/0 ; PWD=/home/mikael ; USER=root ; COMMAND=/usr/bin/journalctl --grep caddy -n 30
 marras 05 19:25:33 mikael-virtualbox systemd[1]: Started caddy.service - Caddy.
 marras 05 19:25:33 mikael-virtualbox caddy[885]: {"level":"info","ts":1793899533.1439126,"msg":"autosaved config (load with --resume flag)","file":"/var/lib/caddy/.config/caddy/autosave.json"}
